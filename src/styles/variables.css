@@ -1,0 +1,12 @@
+:root {
+  --primary-text-color: #121417;
+  --secondary-text-color: #12141780;
+  --header-text-color: #8a8a89;
+  --primary-bg-color: #ffffff;
+  --select-bg-color: #f7f7fb;
+
+  /* button-styles */
+  --btn-text-color: #ffffff;
+  --btn-bg-color: #3470ff;
+  --btn-bg-hover: #0b44cd;
+}
