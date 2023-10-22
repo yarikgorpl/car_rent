@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/car_rent/static/css/main.d5e0e99a.css",
-    "main.js": "/car_rent/static/js/main.e7df3b1c.js",
+    "main.css": "/car_rent/static/css/main.915bc29e.css",
+    "main.js": "/car_rent/static/js/main.b85e964d.js",
+    "static/media/Manrope-SemiBold.ttf": "/car_rent/static/media/Manrope-SemiBold.f5a196d0d4279a9d508b.ttf",
+    "static/media/Manrope-Medium.ttf": "/car_rent/static/media/Manrope-Medium.8a67b4960abffa07d705.ttf",
+    "static/media/Manrope-Regular.ttf": "/car_rent/static/media/Manrope-Regular.e2059087f5ed108dfde0.ttf",
+    "static/media/Manrope-SemiBold.woff2": "/car_rent/static/media/Manrope-SemiBold.deabd7f391722e34bd35.woff2",
+    "static/media/Manrope-Regular.woff2": "/car_rent/static/media/Manrope-Regular.fd0d3fd35b79382d34dd.woff2",
+    "static/media/Manrope-Medium.woff2": "/car_rent/static/media/Manrope-Medium.fb83e40d9271664c42c1.woff2",
     "static/media/bmw.jpg": "/car_rent/static/media/bmw.1ed2f5b7e7f81f08b357.jpg",
     "index.html": "/car_rent/index.html",
-    "main.d5e0e99a.css.map": "/car_rent/static/css/main.d5e0e99a.css.map",
-    "main.e7df3b1c.js.map": "/car_rent/static/js/main.e7df3b1c.js.map"
+    "main.915bc29e.css.map": "/car_rent/static/css/main.915bc29e.css.map",
+    "main.b85e964d.js.map": "/car_rent/static/js/main.b85e964d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5e0e99a.css",
-    "static/js/main.e7df3b1c.js"
+    "static/css/main.915bc29e.css",
+    "static/js/main.b85e964d.js"
   ]
 }
