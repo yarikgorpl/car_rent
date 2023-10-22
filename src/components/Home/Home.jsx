@@ -12,7 +12,8 @@ export const Home = () => {
         </Title>
 
         <Text>
-          Streamline your car rental with our effortless booking process.
+          Streamline your car rental with our
+          <Span> effortless booking process.</Span>
         </Text>
 
         <Button>Choose your car</Button>

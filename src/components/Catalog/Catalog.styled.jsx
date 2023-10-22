@@ -6,4 +6,5 @@ export const CatalogList = styled.ul`
   row-gap: 50px;
   column-gap: 28px;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 `;

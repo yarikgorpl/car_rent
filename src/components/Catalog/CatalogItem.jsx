@@ -6,7 +6,11 @@ import {
   CardDescription,
   Model,
   ImageWrapper,
+  SVG,
+  Favorite,
+  TitleDescription,
 } from './CatalogItem.styled';
+import sprite from '../../assets/images/icons/icons.svg';
 export const ListItem = ({
   img,
   make,
@@ -24,14 +28,20 @@ export const ListItem = ({
     <Card>
       <CardTitle>
         <ImageWrapper>
+          <Favorite>
+            <SVG>
+              <use href={`${sprite}#icon-heart`}></use>
+            </SVG>
+          </Favorite>
+
           <CardImage src={img} alt={make} />
         </ImageWrapper>
 
-        <p>
-          {make}
-          <Model> {model},</Model>
+        <TitleDescription>
+          {make.slice(0, 10)}
+          <Model> {model.slice(0, 8)},</Model>
           {year} <span>{rentalPrice}</span>
-        </p>
+        </TitleDescription>
       </CardTitle>
 
       <ul>

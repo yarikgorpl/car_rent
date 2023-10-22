@@ -7,10 +7,11 @@ export const Background = styled.div`
   width: 100%;
   height: 100vh;
   background-size: cover;
+  background-position: 50% 50%;
 `;
 export const Wrapper = styled.div`
   position: absolute;
-  top: 200px;
+  top: 50px;
   left: 50px;
 `;
 export const Title = styled.h1`

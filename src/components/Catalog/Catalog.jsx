@@ -1,6 +1,7 @@
 import { ListItem } from './CatalogItem';
 import { Filter } from 'components/Filter/Filter';
 import { CatalogList } from 'components/Catalog/Catalog.styled';
+import { LoadMore } from 'components/Buttons/LoadMore/LoadMore';
 export const Catalog = ({ advertsCars }) => {
   return (
     <>
@@ -10,6 +11,7 @@ export const Catalog = ({ advertsCars }) => {
           return <ListItem key={item.id} {...item} />;
         })}
       </CatalogList>
+      <LoadMore />
     </>
   );
 };

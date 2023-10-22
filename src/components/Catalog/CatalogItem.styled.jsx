@@ -4,8 +4,7 @@ export const Card = styled.div`
   flex-direction: column;
 `;
 export const CardTitle = styled.div`
-  color: #121417;
-
+  color: var(--primary-text-color);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -21,12 +20,34 @@ export const CardImage = styled.img`
 `;
 export const CardDescription = styled.li`
   font-size: 12px;
-  color: #12141780;
+  color: var(--secondary-text-color);
 `;
 export const Model = styled.span`
-  color: #3470ff;
+  color: var(--btn-bg-color);
 `;
 export const ImageWrapper = styled.div`
+  position: relative;
   width: 274px;
   height: 268px;
 `;
+export const SVG = styled.svg`
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  pointer-events: none;
+  stroke: var(--btn--heart-color);
+  fill: transparent;
+`;
+export const Favorite = styled.button`
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: none;
+`;
+export const TitleDescription = styled.p``;
