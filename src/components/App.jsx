@@ -1,5 +1,5 @@
-import { Routes, Route, NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import { Routes, Route } from 'react-router-dom';
+
 // import { lazy, Suspense } from 'react';
 
 import { HomePage } from '../pages/HomePage';
@@ -7,26 +7,19 @@ import { HomePage } from '../pages/HomePage';
 import { CatalogPage } from '../pages/CatalogPage';
 import { FavoritePage } from '../pages/FavoritePage';
 import { NotFoundPage } from '../pages/NotFoundPage';
-const StyledLink = styled(NavLink)`
-  color: #cccccc;
-
-  &.active {
-    color: orange;
-  }
-`;
-
+import { StyledLink, Navigate } from './App.styled';
 // const Home = lazy(() => import('./Home/Home'));
 
 export const App = () => {
   return (
-    <div>
-      <nav>
+    <>
+      <Navigate>
         <StyledLink to="/" end>
           Home
         </StyledLink>
         <StyledLink to="/catalog">Catalog</StyledLink>
         <StyledLink to="/favorites">Favorite</StyledLink>
-      </nav>
+      </Navigate>
       {/* <Suspense fallback={null}> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -35,6 +28,6 @@ export const App = () => {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       {/* </Suspense> */}
-    </div>
+    </>
   );
 };

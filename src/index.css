@@ -1,7 +1,34 @@
+@font-face {
+  font-family: 'Manrope';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/Manrope-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Manrope-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/Manrope-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Manrope-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/Manrope-SemiBold.woff2') format('woff2'),
+    url('./assets/fonts/Manrope-SemiBold.ttf') format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    sans-serif;
+  box-sizing: border-box;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--page-bg-color);
@@ -50,9 +77,4 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-/* Свойства для обнуления курсива у address */
-address {
-  font-style: normal;
 }

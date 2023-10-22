@@ -1,26 +1,22 @@
 import React from 'react';
-import { Background, Title, Text } from './Home.styled';
+import { Background, Wrapper, Title, Text, Span } from './Home.styled';
 
-import { CustomButton } from '../Buttons/CustomButton/CustomButton';
+import { Button } from '../Buttons/Button/Button';
 export const Home = () => {
-  const handleScroll = () => {};
-
   return (
     <Background>
-      <div>
+      <Wrapper>
         <Title>
-          Find, book, or rent a car
-          <span>quickly and easily!</span>
+          Find, book, or rent a car <br />
+          <Span>quickly and easily!</Span>
         </Title>
 
         <Text>
-          Streamline your car rental exTexterince with our effortless booking
-          process.
+          Streamline your car rental with our effortless booking process.
         </Text>
 
-        <CustomButton handleClick={handleScroll} />
-      </div>
-      <div></div>
+        <Button>Choose your car</Button>
+      </Wrapper>
     </Background>
   );
 };
