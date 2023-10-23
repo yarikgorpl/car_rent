@@ -1,3 +1,4 @@
-export const Favorite = () => {
-  return <div>FAVORITE</div>;
+import { ModalCard } from 'components/ModalCard/ModalCard';
+export const Favorite = ({ advertsCars }) => {
+  return <ModalCard />;
 };

@@ -2,12 +2,15 @@ import sprite from '../../assets/images/icons/icons.svg';
 
 import styled from 'styled-components';
 export const Card = styled.div`
+  width: 541px;
+  height: 752px;
+  padding: 15px 37px;
   display: flex;
   flex-direction: column;
 `;
 export const CardTitle = styled.div`
   color: var(--primary-text-color);
-  font-family: Manrope;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -47,26 +50,7 @@ export const ImageWrapper = styled.div`
   width: 274px;
   height: 268px;
 `;
-export const SVG = styled.svg`
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  pointer-events: none;
-  stroke: var(--btn--heart-color);
-  fill: transparent;
-`;
-export const Favorite = styled.button`
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  border: none;
-`;
+
 export const TitleDescription = styled.p`
   display: flex;
   width: 274px;

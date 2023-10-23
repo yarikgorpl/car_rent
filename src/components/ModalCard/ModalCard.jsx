@@ -1,4 +1,4 @@
-import { LearnMore } from '../Buttons/LearnMoreBtn/LearnMoreBtn';
+import { Button } from 'components/Buttons/Button/Button';
 import {
   Card,
   CardTitle,
@@ -6,14 +6,11 @@ import {
   CardDescription,
   Model,
   ImageWrapper,
-  SVG,
-  Favorite,
   CardDescriptionList,
   TitleDescription,
   CardDescriptionWrapper,
-} from './CatalogItem.styled';
-import sprite from '../../assets/images/icons/icons.svg';
-export const ListItem = ({
+} from './ModalCard.styled';
+export const ModalCard = (
   img,
   make,
   model,
@@ -21,30 +18,36 @@ export const ListItem = ({
   rentalPrice,
   address,
   rentalCompany,
+  accessories,
   type,
   id,
   functionalities,
-}) => {
+  description,
+  rentalConditions,
+  mileage
+) => {
+  console.log(accessories);
+  const Accesories = [...accessories];
+  const Func = [...functionalities];
+  const Option = [...Accesories, ...Func];
+
+  const Condition = { rentalConditions }.split('/n');
+  const Other = [...mileage, ...rentalPrice];
+  const All = [...Condition, ...Other];
   return (
     <>
       <Card>
         <CardTitle>
           <ImageWrapper>
-            <Favorite>
-              <SVG>
-                <use href={`${sprite}#icon-heart`}></use>
-              </SVG>
-            </Favorite>
-
             <CardImage src={img} alt={make} />
           </ImageWrapper>
 
           <TitleDescription>
-            <div>
-              {make.slice(0, 15)}
-              <Model> {model.slice(0, 8)},</Model>
+            <h1>
+              {make}
+              <Model> {model},</Model>
               {year}
-            </div>
+            </h1>
             <span>{rentalPrice}</span>
           </TitleDescription>
         </CardTitle>
@@ -63,8 +66,22 @@ export const ListItem = ({
             </CardDescription>
           </CardDescriptionList>
         </CardDescriptionWrapper>
-        <LearnMore />
+        <p>{description}</p>
+        <h2>Accessories and functionalities:</h2>
+        <ul>
+          {Option.map(opt => (
+            <li>{opt}</li>
+          ))}
+        </ul>
+        <h2>Rental Conditions:</h2>
+        <ul>
+          {All.map(cond => (
+            <li>{cond}</li>
+          ))}
+        </ul>
       </Card>
+
+      <Button> Rental car </Button>
     </>
   );
 };

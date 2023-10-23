@@ -1,8 +1,8 @@
 import React from 'react';
 import Modal from 'components/Modal/Modal';
-import { ModalCard } from 'components/ModalCard/ModalCard/ModalCard';
+import { ModalCard } from 'components/ModalCard/ModalCard';
 
-export const TaskModal = ({ category, task, onClose, isOpen }) => {
+export const TaskModal = ({ onClose, isOpen }) => {
   const closeButtonPosition = { top: '16px', right: '16px' };
 
   return (
@@ -11,7 +11,7 @@ export const TaskModal = ({ category, task, onClose, isOpen }) => {
       isOpen={isOpen}
       closeButtonPosition={closeButtonPosition}
     >
-      <ModalCard onClose={onClose} category={category} task={task} />
+      <ModalCard onClose={onClose} />
     </Modal>
   );
 };
